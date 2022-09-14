@@ -132,7 +132,7 @@ a {
 
 /*Header*/
 .header {
-  background-image: url("../img/red-cat-mobile@2x.png");
+  background-image: url("../img/red-cat-mobile.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 275px auto;
@@ -143,9 +143,21 @@ a {
     background-size: 650px auto;
   }
 }
+@media (min-width: 768px) and (min-resolution: 2dppx){
+  .header {
+    background-image: url("../img/red-cat-tablet@2x.png");
+    background-size: 650px auto;
+  }
+}
 @media (min-width: 1240px) {
   .header {
     background-image: url("../img/red-cat-desktop.png");
+    background-size: 980px auto;
+  }
+}
+@media (min-width: 1240px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url("../img/red-cat-desktop@2x.png");
     background-size: 980px auto;
   }
 }
@@ -332,6 +344,12 @@ a {
   color: #fff;
   margin-bottom: 35px;
 }
+@media (min-width: 768px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
 
 .section__lead {
   max-width: 500px;
@@ -456,11 +474,11 @@ a {
 }
 
 .slider__button--prev {
-  background-image: url("../img/arrowPrev.svg");
+  background-image: url("../img/icons/arrowPrev.svg");
 }
 
 .slider__button--next {
-  background-image: url("../img/arrowNext.svg");
+  background-image: url("../img/icons/arrowNext.svg");
 }
 
 .pets__button--prev {
@@ -827,9 +845,24 @@ width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 768px) {
+  .care {
+    background-image: url("../img/bg-care-tablet.jpg");
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx){
+  .care {
+    background-image: url("../img/bg-care-tablet@2x.jpg");
+  }
+}
 @media (min-width: 1240px) {
   .care {
     background-image: url("../img/bg-care-desktop.jpg");
+  }
+}
+@media (min-width: 1240px) and (min-resolution: 2dppx){
+  .care {
+    background-image: url("../img/bg-care-desktop@2x.jpg");
   }
 }
 
@@ -893,7 +926,7 @@ width: 100%;
   right: 0;
   top: 0;
   border-left: 1px solid #A07B50;
-  background-image: url("../img/care-arrow.svg");
+  background-image: url("../img/icons/care-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1135,7 +1168,7 @@ width: 100%;
   border-left: 1px solid #A07B50;
   right: 0;
   top: 0;
-  background-image: url("../img/faq-close.svg");
+  background-image: url("../img/icons/faq-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color 0.3s ease-out;
@@ -1143,7 +1176,7 @@ width: 100%;
 
 .faq__question--active.faq__question::after {
   background-color: #A07B50;
-  background-image: url("../img/faq-open.svg");
+  background-image: url("../img/icons/faq-open.svg");
 }
 
 .faq__answer {
