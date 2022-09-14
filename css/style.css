@@ -433,23 +433,34 @@ a {
   position: absolute;
   background-color: transparent;
   height: 18px;
-  width: 8px;
+  width: 18px;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
   cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+@media (min-width: 786px) {
+  .slider__button {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .slider__button:disabled {
   opacity: 0.5;
 }
+.slider__button:hover {
+  opacity: 1;
+}
 
 .slider__button--prev {
-  background-image: url("../img/slider-arrow-back.svg");
+  background-image: url("../img/arrowPrev.svg");
 }
 
 .slider__button--next {
-  background-image: url("../img/slider-arrow-forward.svg");
+  background-image: url("../img/arrowNext.svg");
 }
 
 .pets__button--prev {
@@ -1192,6 +1203,12 @@ width: 100%;
   width: 242px;
   height: 166px;
 }
+@media (min-width: 768px) {
+  .review__img-wrapper {
+    width: 302px;
+    height: auto;
+  }
+}
 @media (min-width: 1240px) {
   .review__img-wrapper {
     position: static;
@@ -1228,7 +1245,7 @@ width: 100%;
 }
 
 .review__button--prev {
-  top: 74px;
+  top: 70px;
   left: 50px;
 }
 @media (min-width: 768px) {
@@ -1245,7 +1262,7 @@ width: 100%;
 }
 
 .review__button--next {
-  top: 74px;
+  top: 70px;
   right: 50px;
 }
 @media (min-width: 768px) {
