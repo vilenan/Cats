@@ -42,14 +42,12 @@ const nextBtnHendler = ()=> {
   } else {
     btnNext.removeAttribute("disabled", "disabled");
   }
-
   slides[counter].classList.add('gallery__item--current');
 }
 
 const prevBtnHendler = ()=> {
   slides[counter].classList.remove('gallery__item--current');
   slides[counter].removeAttribute('style');
-
   counter--;
   if(counter === 0){
     btnPrev.setAttribute("disabled", "disabled");
@@ -61,10 +59,8 @@ const prevBtnHendler = ()=> {
   } else {
     btnNext.removeAttribute("disabled", "disabled");
   }
-
   slides[counter].classList.add('gallery__item--current');
 }
-
 
 btnNext.addEventListener('click', nextBtnHendler);
 btnPrev.addEventListener('click', prevBtnHendler);

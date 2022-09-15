@@ -8,7 +8,6 @@
     <title>Питомник Мейн-Кунов</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
-
 </head>
 <body>
 
@@ -17,7 +16,6 @@
         <div class="header__logo">
           <img src="img/header-logo.svg" alt="логотип питомника Мейн-Кунов" width="50" height="22">
         </div>
-
         <div class="header__content">
           <p class="header__city">Новосибирск</p>
           <h1 class="header__title">Питомник Мейн-Кунов</h1>
@@ -56,7 +54,6 @@
           <div class="section__wrapper container">
             <h2 class="section__title">Питомцы</h2>
             <p class="section__lead">Все представители нашего питомника имеют ветеринарный паспорт с&nbsp;отметками о&nbsp;прививках и&nbsp;документ с&nbsp;родословной</p>
-
             <ul class="pets__filter">
               <li class="pets__item">
                 <a class="pets__tab pets__tab_active" href="#">Коты</a>
@@ -68,19 +65,26 @@
                 <a class="pets__tab" href="#">Котята</a>
               </li>
             </ul>
-
             <div class="pets__filter-content">
               <div class="pets__slider slider">
                 <div class="pets__slider-list slider__list">
                   <div class="gallery slider__wrapper">
                     <div class="gallery__item slider__item">
-                      <img src="img/pets-slider-2.jpg" alt="белый кот мейн-кун" width="234" height="248">
+                      <picture>
+                        <img src="img/pets-slider-1.jpg" srcset="img/pets-slider-1@2x.jpg 2x" alt="белый кот мейн-кун">
+                      </picture>
                     </div>
                     <div class="gallery__item gallery__item--current  gallery__item--big slider__item">
-                      <img src="img/pets-slider-1.jpg" alt="серый кот мейн-кун" width="234" height="248">
+                      <picture>
+
+                        <img src="img/pets-slider-2.jpg" srcset="img/pets-slider-2@2x.jpg 2x" alt="серый кот мейн-кун">
+                      </picture>
                     </div>
                     <div class="gallery__item slider__item">
-                      <img src="img/pets-slider-3.jpg" alt="полосатый кот мейн-кун" width="234" height="248">
+                      <picture>
+
+                        <img src="img/pets-slider-3.jpg" srcset="img/pets-slider-3@2x.jpg 2x" alt="полосатый кот мейн-кун">
+                      </picture>
                     </div>
                   </div>
                 </div>
@@ -88,11 +92,8 @@
                 <button class="slider__button slider__button--next pets__button--next"></button>
               </div>
             </div>
-
-
             <a href="#" class="pets__btn">Смотреть больше</a>
           </div>
-
         </section>
 
         <section class="section features">
@@ -118,8 +119,8 @@
           </div>
         </section>
 
-        <section class="section advantages container">
-          <div class="section__wrapper">
+        <section class="section advantages">
+          <div class="section__wrapper container">
             <h2 class="section__title">Почему именно мы?</h2>
             <p class="section__lead">Приобретая  животное в нашем питомнике, вы получите</p>
             <div class="advantages__list">
@@ -273,8 +274,8 @@
 <!--несколько шагов-->
         </section>
 
-        <section class="section team container">
-          <div class="section__wrapper">
+        <section class="section team">
+          <div class="section__wrapper container">
             <h2 class="section__title">Наша команда</h2>
             <p class="section__lead">Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии</p>
             <div class="team__slider slider">
@@ -410,9 +411,7 @@
     <footer class="footer container">
       <div class="footer__wrapper">
         <p class="footer__address">Новосибирск, Пушкинский проспект, 19</p>
-
         <a class="footer__phone" href="tel:+73839006465">+7 (383) 900-64-65</a>
-
         <ul class="footer__social social">
           <li class="social__item">
             <a href="#" class="footer__link social__link">
@@ -442,7 +441,6 @@
             </a>
           </li>
         </ul>
-
         <img class="footer__logo" src="img/header-logo.svg" alt="логотип питомника Мейн-Кунов" width="56" height="25">
       </div>
     </footer>
