@@ -568,9 +568,8 @@ a {
     transform: translateX(0);
   }
   .gallery__item img {
-    display: block;
-    object-fit: cover;
-    height: 100%;
+
+
   }
   .gallery__item--big {
     grid-column-start: 2;

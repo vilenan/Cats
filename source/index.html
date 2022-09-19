@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Питомник Мейн-Кунов</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
@@ -103,6 +103,9 @@
             <div class="features__image-wrapper">
               <div class="features__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1240px)" srcset="img/breed-features-desktop@1x.webp 1x, img/breed-features-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/breed-features-tablet@1x.webp 1x, img/breed-features-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/breed-features-mobile@1x.webp 1x, img/breed-features-mobile@2x.webp 2x">
                   <source srcset="img/breed-features-desktop@1x.png 1x, img/breed-features-desktop@2x.png" media="(min-width: 1240px)">
                   <source srcset="img/breed-features-tablet@1x.png 1x, img/breed-features-tablet@2x.png" media="(min-width: 768px)">
                   <img src="img/breed-features-mobile@1x.png" alt="рыжий кот мейн-кун" srcset="img/breed-features-mobile@2x.png 2x">
@@ -282,6 +285,8 @@
               <div class="slider-item team__item">
                 <div class="team__img--wrapper">
                   <picture>
+                    <source type="image/webp" srcset="img/team-1-desktop.webp 1x, img/team-1-desktop@2x.webp 2x" media="(min-width: 768px)">
+                    <source type="image/webp" srcset="img/team-1-mobile.webp 1x, img/team-1-mobile@2x.webp 2x">
                     <source media="(min-width: 768px)" srcset="img/team-1-desktop.jpg 1x, img/team-1-desktop@2x.jpg 2x">
                     <img class="team__img" src="img/team-1-mobile.jpg" srcset="img/team-1-mobile@2x.jpg 2x" alt="Серёжа Попов">
                   </picture>
@@ -357,12 +362,11 @@
               <div class="reviews__item review slider__item">
                 <div class="review__img-wrapper">
                   <picture>
-
+                    <source type="image/webp" srcset="img/reviewer-1-desktop.webp 1x, img/reviewer-1-desktop@2x.webp 2x" media="(min-width: 1240px)" >
+                    <source type="image/webp" srcset="img/reviewer-1-mobile.webp 1x, img/reviewer-1-mobile@2x.webp 2x">
                     <source srcset="img/reviewer-1-desktop.jpg 1x, img/reviewer-1-desktop@2x.jpg 2x" media="(min-width: 1240px)" >
                     <img src="img/reviewer-1-mobile.jpg" srcset="img/reviewer-1-mobile@2x.jpg" alt="Серёжа Попов">
                   </picture>
-
-
                 </div>
                 <div class="review__content">
                   <p class="review__name">Серёжа Попов</p>
@@ -444,6 +448,6 @@
         <img class="footer__logo" src="img/header-logo.svg" alt="логотип питомника Мейн-Кунов" width="56" height="25">
       </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="main.min.js"></script>
 </body>
 </html>
