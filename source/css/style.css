@@ -216,7 +216,7 @@ a {
 }
 
 .header__title {
-  margin: 0;
+  margin: 0 auto 30px;
   font-family: 'Yeseva One', Georgia, serif;
   font-style: normal;
   font-weight: 400;
@@ -225,7 +225,6 @@ a {
   text-align: center;
   color: #FFFFFF;
   max-width: 250px;
-  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .header__title {
